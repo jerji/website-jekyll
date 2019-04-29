@@ -5,5 +5,60 @@
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- feed_meta -%}
+  <script type="text/javascript">
+    document.onkeydown = KeyDownHandler;
+    document.onkeyup = KeyUpHandler;
 
+    var CTRL = false;
+    var SHIFT = false;
+    var CHAR_CODE = -1;
+
+    function KeyDownHandler(e)
+    {
+        var x = '';
+        if (document.all)
+        {
+            var evnt = window.event;
+            x = evnt.keyCode;
+        } else
+        {
+            x = e.keyCode;
+        }
+        DetectKeys(x, true);
+    }
+
+    function KeyUpHandler(e)
+    {
+        var x = '';
+        if (document.all)
+        {
+            var evnt = window.event;
+            x = evnt.keyCode;
+        } else
+        {
+            x = e.keyCode;
+        }
+        DetectKeys(x, false);
+    }
+
+    function DetectKeys(KeyCode, IsKeyDown)
+    {
+        if (KeyCode == '16')
+        {
+            SHIFT = IsKeyDown;
+        } else if (KeyCode == '17')
+        {
+            CTRL = IsKeyDown;
+        }
+    }
+
+
+    window.onload = function () {
+      document.getElementById("pi").onclick = function() {
+        if (SHIFT & CTRL){
+          window.open ('{{ '/pi' | relative_url }}','_self',false)
+        }
+      };
+    };
+  </script>
 </head>
