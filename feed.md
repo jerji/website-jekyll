@@ -4,5 +4,5 @@
 
 layout: feed
 title: Feed
-permalink: /feed
+permalink: /feed/:path
 ---
