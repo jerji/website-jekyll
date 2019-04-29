@@ -1,5 +1,5 @@
 ---
 layout: default
-permalink: /pi/
+permalink: / pi/
 ---
 That would have been cool right?

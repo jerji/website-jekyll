@@ -25,6 +25,7 @@ twitter_username:
 github_username:  jerji
 rss: Rss
 osi: MIT License
+show_excerpts: true
 
 # Build settings
 markdown: kramdown
