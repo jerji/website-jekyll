@@ -2,7 +2,6 @@
 layout: post
 title:  "Welcome to my first post"
 date:   2019-04-29 13:31:31
-categories: website update first
 ---
 
 Hey, welcome to my first blog post... I made the website and put it on my server and the only thing that is left to add is the content. That's the hard part.
