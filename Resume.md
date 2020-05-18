@@ -5,4 +5,4 @@ title: Resume
 
 My resume is availible here for download.
 * [English](RESUME.pdf)
-* [French](CV.pdf)
+* French is pending
