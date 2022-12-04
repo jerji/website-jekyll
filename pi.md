@@ -1,5 +1,16 @@
 ---
-layout: default
-permalink: / pi/
+layout: nono
+permalink: / net/
 ---
-That would have been cool right?
+
+<style>
+video {
+  max-width: 90%;
+  height: auto;
+}
+</style>
+
+ <video controls autoplay>
+  <source src="/net.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video> 
